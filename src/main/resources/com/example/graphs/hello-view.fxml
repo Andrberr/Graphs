@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="784.0" prefWidth="1248.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.graphs.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Pane prefHeight="745.0" prefWidth="1201.0" style="-fx-background-color: Pink;">
+            <children>
+                <Button fx:id="GraphButton" layoutX="645.0" layoutY="630.0" mnemonicParsing="false" onAction="#onGraphButtonClick" prefHeight="62.0" prefWidth="125.0" text="Построить граф" />
+                <TextField fx:id="TextF" alignment="TOP_LEFT" layoutX="39.0" layoutY="642.0" prefHeight="50.0" prefWidth="563.0" />
+                <Button fx:id="LongestButton" layoutX="21.0" layoutY="300.0" mnemonicParsing="false" onAction="#onLongestButtonClick" prefHeight="43.0" prefWidth="204.0" text="Найти самый длинный путь" />
+                <Canvas fx:id="canvas" height="584.0" layoutX="300.0" layoutY="8.0" width="871.0" />
+                <Label fx:id="PramObh" layoutX="198.0" layoutY="603.0" prefHeight="27.0" prefWidth="204.0" text="Матрица смежности:" textFill="#4b1ccc">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Source" layoutX="7.0" layoutY="66.0" prefHeight="27.0" prefWidth="214.0" text="Вершина-источник = " textFill="#cc1da7">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Stock" layoutX="7.0" layoutY="100.0" prefHeight="27.0" prefWidth="214.0" text="Рез.-вершина = " textFill="#4aafb4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="ClosestButton" layoutX="21.0" layoutY="236.0" mnemonicParsing="false" onAction="#onClosestButtonClick" prefHeight="43.0" prefWidth="204.0" text="Найти кратчайший путь" />
+                <TextField fx:id="TextF2" layoutX="21.0" layoutY="191.0" prefHeight="25.0" prefWidth="75.0" />
+            <Button fx:id="AllWaysButton" layoutX="21.0" layoutY="364.0" mnemonicParsing="false" onAction="#onAllWaysButtonClick" prefHeight="43.0" prefWidth="204.0" text="Найти все пути по возрастанию" />
+            <Label fx:id="GraphCenter" layoutX="7.0" layoutY="137.0" prefHeight="27.0" prefWidth="214.0" text="Центр графа = " textFill="#b2504f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextF21" layoutX="123.0" layoutY="191.0" prefHeight="25.0" prefWidth="75.0" />
+            <TextArea fx:id="Result" layoutX="6.0" layoutY="423.0" prefHeight="115.0" prefWidth="273.0" />
+            </children>
+        </Pane>
+    </children>
+</VBox>
